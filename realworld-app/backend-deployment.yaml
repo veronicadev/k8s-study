@@ -20,5 +20,5 @@ spec:
       - image: allthethings/spring-boot-realworld-example-app
         name: backend
         ports:
-        - containerPort: 80
+        - containerPort: 8080
           name: realworld-app

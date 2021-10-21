@@ -8,9 +8,9 @@ metadata:
 spec:
   type: NodePort
   ports:
-  - targetPort: 80
-    port: 80
-    nodePort: 30008
+  - name: backend-service
+    port: 8080
+    targetPort: 8080
   selector:
-    app: realworld-app
+    app: redis
     type: be
