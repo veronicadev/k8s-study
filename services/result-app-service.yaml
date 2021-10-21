@@ -1,4 +1,4 @@
-apiVersion: V1
+apiVersion: apps/V1
 kind: Service
 metadata:
   name: result-app-service
