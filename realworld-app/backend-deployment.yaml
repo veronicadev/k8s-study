@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: realworld-app
+  name: backend
+  namespace: realworld-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: realworld-app
+  template:
+    metadata:
+      labels:
+        app: realworld-app
+    spec:
+      containers:
+      - image: allthethings/spring-boot-realworld-example-app
+        name: backend
+        ports:
+        - containerPort: 80
+          name: realworld-app
