@@ -6,7 +6,7 @@ metadata:
   name: backend-service
   namespace: realworld-app
 spec:
-  type: NodePort
+  type: LoadBalancer
   ports:
   - name: "backend-service"
     port: 8080
