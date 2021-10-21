@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app: realworld-app
+    type: be
   name: backend
   namespace: realworld-app
 spec:
