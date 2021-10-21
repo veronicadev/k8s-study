@@ -5,6 +5,7 @@ metadata:
   labels:
     name: redis-pod
     app: demo-voting-app
+    
 spec:
   containers:
     - name: redis
